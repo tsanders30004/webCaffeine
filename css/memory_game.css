@@ -4,7 +4,7 @@
 
 .pageTitle {
      text-align: center;
-     font-size: 5em;
+     /*font-size: 2em;*/
      font-weight: bold;
      margin-top: -10px;
      margin-bottom: -20px;
@@ -56,6 +56,17 @@ p {
      width: 33.3333%;
 }
 
-/*.monsterButton {
-
-}*/
+@media only screen and (min-width: 370px) {
+    .pageTitle {
+        font-size: 4em;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .pageTitle {
+        font-size: 5em;
+    }
+}
+@media only screen and (min-width: 2000px) {
+    .pageTitle {
+        font-size: 6em;
+    }

@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
      var state = 'first';
      var currentVisibleImage = '';
      var stateOneImage = '';
@@ -36,7 +35,6 @@ $(document).ready(function(){
                shuffledArray.push(myArray[randomIndex]);
                myArray.splice(randomIndex, 1);
           }
-          // console.log(shuffledArray);
           return shuffledArray;
      };
 
@@ -62,7 +60,6 @@ $(document).ready(function(){
           }
 
           var monsterList = makeShuffledMonsterArray(myMonsters, numRows, numCols);
-          console.log(monsterList);
 
           var imgTagPart1 = '<img class="monster" src="img/monsters/';
           var imgTagPart2 = '">';
@@ -81,7 +78,7 @@ $(document).ready(function(){
           /* create the image tag which will build the HTML needed to show the grid */
           for (i=0; i < monsterList.length; i++) {
                imgTag += divTag1 + divTag2 + divTag3 + imgTagPart1 + monsterList[i] + imgTagPart2 + divTag4;
-               console.log(divTag1 + divTag2 + divTag3 + imgTagPart1 + monsterList[i] + imgTagPart2 + divTag4);
+               // console.log(divTag1 + divTag2 + divTag3 + imgTagPart1 + monsterList[i] + imgTagPart2 + divTag4);
           }
 
           return imgTag;
@@ -94,7 +91,7 @@ $(document).ready(function(){
           $('#buttonContainer').css('visibility', 'hidden');
      // });
 
-     $('#grid').append(makeGrid(monsters, 4, 4));    /* create HTML grid on M rows and N columns.  the product of M and N must be an even number <= 32.  */
+     $('#grid').append(makeGrid(monsters, 3, 4));    /* create HTML grid on M rows and N columns.  the product of M and N must be an even number <= 32.  */
 
      $('.tile').click(function(){
           if (state === 'first') {
