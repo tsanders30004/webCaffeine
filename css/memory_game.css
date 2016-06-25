@@ -1,0 +1,61 @@
+* {
+     box-sizing: border-box;
+}
+
+.pageTitle {
+     text-align: center;
+     font-size: 5em;
+     font-weight: bold;
+     margin-top: -10px;
+     margin-bottom: -20px;
+     padding: 0;
+     font-family: 'Indie Flower';
+     color: rgb(153, 225, 0);
+}
+p {
+     text-align: center;
+     font-size: 2em;
+}
+
+#grid, #mainTitle {
+     width: 80%;
+     margin-left:  10%;
+     margin-right: 10%;
+}
+#buttonContainer {
+     position: absolute;
+     width: 33%;
+     top: 33%;
+     left: 33%;
+     border: 1px dotted solid;
+     margin: 0;
+}
+
+.tile {
+     float: left;
+     width: 22%;
+     border: 2px solid orange;
+     margin: 1.5%;
+}
+.tile img {
+     width: 100%;
+     display: block;
+     opacity: 0;                        /* make images inside tiles invisible; i.e., opactity 0 */
+     transition: opacity 0.5s;
+}
+
+.tile.open img{                         /* note that .tile and .open do not have a space; they are adjacent.  this meams both classes apply. the code shown here meams to target images that are inside elements which have both the .time and .open classes.  in this example, it would have worked to say only '.open img' */
+     opacity: 1;
+}
+
+.matched {
+     opacity: 1;
+}
+.buttonDiv {
+     float: left;
+     width: 33.3333%;
+}
+
+/*.monsterButton {
+
+}*/

@@ -1,3 +1,4 @@
+<!-- math start -->
 <div class="container">
 
      <div class="row">   <!-- intro -->
@@ -89,11 +90,16 @@
 
      <div class="row">   <!-- row fibonacci sequence -->
           <h1>The Fibonacci Sequence</h1>
-          <div class="col md-6">   <!-- fibonacci sequence -->
+          <div class="col-md-6">   <!-- fibonacci sequence -->
 
                <p>
                     The Fibonacci Sequence is defined as $f[n] = {0, 1, 1, 2, 3, 5, 8, ...}$.
                     Each element of the sequence is the sum of the preceding two elements.
+                    Using standard signal processing notation, the Fibonacci Sequence can be charactertized
+                    by the following recusive difference equation:
+               </p>
+               <p>
+                    $$f[n+2]=f[n+1]+f[n],\text{where}f[0]=0\text{ and }f[1]=1.$$
                </p>
 
                <p>
@@ -106,36 +112,33 @@
                     <li>Arragement of stems on a pineappe</li>
                     <li>Arragement of bracts on a pine cone</li>
                </ul>
-          </div>   <!-- fibonacci sequence -->
-
-          <div class="col md-6">   <!-- fibonacci spiral -->
                <p>A curious characteristic of this sequence is that it appears so regularly in the sciences, and in artforms.</p>
 
                <p>
                     Of particular interest to the author is the relationship of this sequence to the so-called Fibonacci Spiral.
                     In photography, subject placement is generally considered to be most pleasing if the subject is centered as shown in the figure.
-                    <img src="img/fibonacci.jpg" alt="Fibonacci Spiral">
-               </p>
+               </p><p>&nbsp;</p>
+          </div>   <!-- fibonacci sequence -->
+
+          <div class="col-md-6">   <!-- fibonacci spiral -->
+
+                    <img id = "spiral" src="img/fibonacci.jpg" alt="Fibonacci Spiral">
+
           </div>   <!-- fibonacci spiral -->
      </div> <!-- row fibonacci sequence -->
      <div class="row">
           <div class="col-md-12">
                <p>
-                    Using mathematical notation commonly observed in signal processing, the sequence can be characterized with the following formula:
-                    $$f[n] = \frac{\varphi^n-(-\varphi)^{-n}}{2\varphi -1}$$
+                    Using the Z-Transform and its Forward Shift Property, it is possible to derive a closed-form expression for the Fibonacci Sequence:
+                    $$f[n] = \frac{\varphi^n-(-\varphi)^{-n}}{2\varphi -1}\text{ where }\varphi=\frac{1+\sqrt{5}}{2}$$
                </p>
 
                <p>
-                    Extending the signal processing metaphor, it is possible to derive a closed form expression of the Fibonacci Sequence
-                    by applying the $Z$-Transform of a signal $f[n]$:
-                    $$F(z) =\sum_{n=0}^{\infty}f[n]z^{-n}$$
+                    It is remarkable that the Fibonacci Sequence, made up entirely of integers,
+                    is a fuction of $\sqrt{5}$, which - like $\pi$ - is an irrational number.  This sequence clearly, and eloquently,
+                    combines art and the sciences.
                </p>
-
-               <p>
-                    The forward shift propery of the $Z$-Transform stipulates that the $Z$-Transform of $f[n+1]$ is equal to $z(F(z)-f[0])$.
-                    By applying this property to the Fibonacci Sequence $f[n]$ shows, after a lot of messy algebra, that the $n{th}$ element of the sequence
-                    can be non-recursively calculated as
-                    $f[n] = \frac{\varphi^n-(-\varphi)^{-n}}{2\varphi -1}$ where $\varphi=\frac{1+\sqrt{5}}{2}$.
+               <p>For more information on the Fibonacci Sequence, see <a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">Wikipedia</a>.
                </p>
           </div>
      </div>
@@ -143,3 +146,5 @@
 <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
 <!-- end -->
+
+<!-- math end -->

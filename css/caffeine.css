@@ -240,3 +240,6 @@ footer {
      padding-left: 5%;
      padding-right: 5%;
 }
+#graph_paper {
+     background-image: url("img/graph_paper.png");
+}

@@ -32,156 +32,7 @@
 
 <body>
 
-     <!-- math start -->
-     <div class="container">
 
-          <div class="row">   <!-- intro -->
-               <h1>The Z-Transform</h1>
-               <p>The Z-transform of a sequence $x[n]$ is defined by the formula $$X(z) =\sum_{n=0}^{\infty}x[n]z^{-n}.$$</p>
-               <p>Consider the following:</p>
-
-               <p>
-                    $$\begin{matrix}x[n] & = & 3 \left ( \frac{1}{2}\right )^{n}+2\left (-\frac{1}{3}\right )^{n}+6\delta[n] \\
-                    & = & \begin{cases} 11, & n=0\\ 3 \left ( \frac{1}{2}\right )^{n}+2\left (-\frac{1}{3}\right )^{n},
-                    & n>0\end{cases}\end{matrix}$$we therefore can conclude that
-                    $$X(z) = \frac{11-z^{-1}-z^{-2}}{1-\frac{1}{6}z^{-1}-\frac{1}{6}z^{-2}}
-                    =\frac{3}{1-\frac{1}{2}z^{-1}} + \frac{2}{1+\frac{1}{3}z^{-1}}+6$$
-               </p>
-
-          </div> <!-- row -->
-
-          <div class="row">   <!-- row -->
-               <div id="ztranpairs" class="col-md-6">
-                    <p>A short table of $Z$ Transform Pairs is shown below.</p>
-                    <table class="table table-bordered table-striped table-condensed" width="90%" border="1">
-                         <tr>
-                              <td class="LaTeX">$$x[n]$$</td>
-                              <td class="LaTeX">$$X(z)$$</td>
-                         </tr>
-
-                         <tr>
-                              <td>$$\delta[n] = \begin{cases}1, & n = 0, \\ 0 & n \ne 0\end{cases}$$</td>
-                              <td>$$1$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$u[n-N]= \begin{cases}1, & n \ge N \ge 0, \\ 0, & n < 0\end{cases}$$</td>
-                              <td>$$\frac{z^{-N}}{1-z^{-1}}$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$a^n$$</td>
-                              <td>$$\frac{1}{1-az^{-1}}$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$n$$</td>
-                              <td>$$\frac{z^{-1}}{(1-z^{-1})^2}$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$na^n$$</td>
-                              <td>$$\frac{az^{-1}}{(1-az^{-1})^2}$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$a^n \cos n \theta$$</td>
-                              <td>$$\frac{1-a \cos\theta z^{-1}}{1-2a \cos\theta z^{-1}+a^2 z^{-2}}$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$a^n \sin n \theta$$</td>
-                              <td>$$\frac{a \sin\theta z^{-1}}{1-2a \cos\theta z^{-1}+a^2 z^{-2}}$$</td>
-                         </tr>
-                    </table>
-               </div>         <!-- ztranpairs -->
-
-               <div id="ztranprops" class="col-md-6">  <!-- ztranprops -->
-                    <p>A short table of $Z$ Transform Properties is shown below.</p>
-                    <table class="table table-bordered table-striped table-condensed" width="90%" border="1">
-                         <tr>
-                              <td class="LaTeX">$$\text{Property}$$</td>
-                              <td class="LaTeX">$$x[n]$$</td>
-                              <td class="LaTeX">$$X(z)$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$\text{Linearity}$$</td>
-                              <td>$$ax[n] + by[n]$$</td>
-                              <td>$$aX(z)+bY(z)$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$\text{Forward Shift}$$</td>
-                              <td>$$x[n+1]$$</td>
-                              <td>$$z \left ( X(z) - x[0] \right )$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$\text{Delay}$$</td>
-                              <td>$$x[n-N]u(n-N])$$</td>
-                              <td>$$z^{-n}X(z), N \ge 0$$</td>
-                         </tr>
-                         <tr>
-                              <td>$$\text{Multiplication by n}$$</td>
-                              <td>$$nx[n]$$</td>
-                              <td>$$-z \left( \frac{dX(z)}{dz} \right )$$</td>
-                         </tr>
-                    </table>
-               </div>    <!-- ztranprops -->
-          </div> <!-- row -->
-
-          <div class="row">   <!-- row fibonacci sequence -->
-               <h1>The Fibonacci Sequence</h1>
-               <div class="col-md-6">   <!-- fibonacci sequence -->
-
-                    <p>
-                         The Fibonacci Sequence is defined as $f[n] = {0, 1, 1, 2, 3, 5, 8, ...}$.
-                         Each element of the sequence is the sum of the preceding two elements.
-                         Using standard signal processing notation, the Fibonacci Sequence can be charactertized
-                         by the following recusive difference equation:
-                    </p>
-                    <p>
-                         $$f[n+2]=f[n+1]+f[n],\text{where}f[0]=0\text{ and }f[1]=1.$$
-                    </p>
-
-                    <p>
-                         The sequence appears surprisingly often in higher mathematics - and in nature.
-                         The following naturally occurring things are related to the Fibonacci Sequence:
-                    </p>
-
-                    <ul>
-                         <li>Branching in trees</li>
-                         <li>Arragement of stems on a pineappe</li>
-                         <li>Arragement of bracts on a pine cone</li>
-                    </ul>
-                    <p>A curious characteristic of this sequence is that it appears so regularly in the sciences, and in artforms.</p>
-
-                    <p>
-                         Of particular interest to the author is the relationship of this sequence to the so-called Fibonacci Spiral.
-                         In photography, subject placement is generally considered to be most pleasing if the subject is centered as shown in the figure.
-                    </p><p>&nbsp;</p>
-               </div>   <!-- fibonacci sequence -->
-
-               <div class="col-md-6">   <!-- fibonacci spiral -->
-
-                         <img id = "spiral" src="img/fibonacci.jpg" alt="Fibonacci Spiral">
-
-               </div>   <!-- fibonacci spiral -->
-          </div> <!-- row fibonacci sequence -->
-          <div class="row">
-               <div class="col-md-12">
-                    <p>
-                         Using the Z-Transform and its Forward Shift Property, it is possible to derive a closed-form expression for the Fibonacci Sequence:
-                         $$f[n] = \frac{\varphi^n-(-\varphi)^{-n}}{2\varphi -1}\text{ where }\varphi=\frac{1+\sqrt{5}}{2}$$
-                    </p>
-
-                    <p>
-                         It is remarkable that the Fibonacci Sequence, made up entirely of integers,
-                         is a fuction of $\sqrt{5}$, which - like $\pi$ - is an irrational number.  This sequence clearly, and eloquently,
-                         combines art and the sciences.
-                    </p>
-                    <p>For more information on the Fibonacci Sequence, see <a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">Wikipedia</a>.
-                    </p>
-               </div>
-          </div>
-     </div> <!-- container -->
-     <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
-     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
-     <!-- end -->
-
-     <!-- math end -->
 
           <!-- Navigation -->
           <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -322,7 +173,7 @@
                                    <div class="col-md-6">
                                         <div class="portfolio-item">
                                              <a href="#">
-                                                  <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                                  <img class="img-portfolio img-responsive" src="img/monsters/monsters-06.png">
                                              </a>
                                         </div>
                                    </div>
@@ -343,7 +194,7 @@
                                    <div class="col-md-6">
                                         <div class="portfolio-item">
                                              <a href="math.html">
-                                                  <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                                  <img class="img-portfolio img-responsive" src="img/photo_spiral.png">
                                              </a>
                                         </div>
                                    </div>
