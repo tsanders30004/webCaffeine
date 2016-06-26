@@ -224,6 +224,9 @@ hr.small {
 .ztable {
 	background-color: #FFFFFF;
 }
+#batman_position {
+	margin-left: 10%;
+}
 @media(max-width:768px) {
     .map {
         height: 75%;
@@ -266,4 +269,7 @@ footer {
 #fib_page {
 	margin-left: 5%;
 	margin-right: 5%;
+}
+.portfolio-item {
+	border: 1px solid black;
 }
