@@ -243,3 +243,20 @@ footer {
 #graph_paper {
      background-image: url("img/graph_paper.png");
 }
+#logo {
+     top: 7%;
+     left: 10%;
+     float: left;
+     display: inline;
+     position: absolute;
+     z-index: 1;
+}
+.text-vertical-center {
+     color: #c17c08;
+}
+#services {
+     background-color: #b6ac5c;
+}
+#portfolio {
+     background-color: #dbd4ab;
+}

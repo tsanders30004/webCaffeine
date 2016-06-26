@@ -36,7 +36,7 @@ $(document).ready(function(){
                myArray.splice(randomIndex, 1);
           }
           return shuffledArray;
-     };
+     }
 
      function makeGrid(myMonsters, numRows, numCols) {
           /*   myMonsters is the array of monster image filenames.
@@ -87,13 +87,17 @@ $(document).ready(function(){
      // $('#grid').css('visibility', 'hidden');
 
      // $('.monsterButton').click(function(){
-          $('#grid').css('visibility', 'visible');
-          $('#buttonContainer').css('visibility', 'hidden');
+     // $('#grid').css('visibility', 'visible');
+     // $('#buttonContainer').css('visibility', 'hidden');
      // });
-
-     $('#grid').append(makeGrid(monsters, 3, 4));    /* create HTML grid on M rows and N columns.  the product of M and N must be an even number <= 32.  */
-
+     console.log('line1');
+     console.log(monsters);
+     $('#grid').html(makeGrid(monsters, 2, 2));    /* create HTML grid on M rows and N columns.  the product of M and N must be an even number <= 32.  */
+     console.log('grid was created');
+     console.log('line2');
+     console.log(monsters);
      $('.tile').click(function(){
+          console.log('tile was clicked');
           if (state === 'first') {
                stateOneImage = $(this).addClass('open');     /* make visible */
                // console.log(stateOneImage);
@@ -113,7 +117,38 @@ $(document).ready(function(){
                }
 
                state = 'first';
-          };
+          }
      });
 
+     $('#play_again').click(function(){
+          // state = 'first';
+          console.log('play again button clicked');
+          var state = 'first';
+          var currentVisibleImage = '';
+          var stateOneImage = '';
+          var stateTwoImage = '';
+          var monsters = [
+               'monsters-01.png',
+               'monsters-02.png',
+               'monsters-03.png',
+               'monsters-04.png',
+               'monsters-05.png',
+               'monsters-06.png',
+               'monsters-07.png',
+               'monsters-08.png',
+               'monsters-09.png',
+               'monsters-10.png',
+               'monsters-11.png',
+               'monsters-12.png',
+               'monsters-13.png',
+               'monsters-14.png',
+               'monsters-15.png',
+               'monsters-16.png'
+          ];
+
+          $('.tile').removeClass('open').removeClass('matched');
+          console.log('before remake grid');
+          $('#grid').html(makeGrid(monsters, 2, 2));
+          console.log('after remake grid');
+     });
 });
