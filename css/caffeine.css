@@ -221,6 +221,9 @@ hr.small {
      font-size: 1.5em;
      text-align: center;
 }
+.ztable {
+	background-color: #FFFFFF;
+}
 @media(max-width:768px) {
     .map {
         height: 75%;
@@ -241,7 +244,7 @@ footer {
      padding-right: 5%;
 }
 #graph_paper {
-     background-image: url("img/graph_paper.png");
+	background-image: url(../img/graph_paper.png);
 }
 #logo {
      top: 7%;
@@ -259,4 +262,8 @@ footer {
 }
 #portfolio {
      background-color: #dbd4ab;
+}
+#fib_page {
+	margin-left: 5%;
+	margin-right: 5%;
 }

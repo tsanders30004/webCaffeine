@@ -33,6 +33,7 @@
 <body>
 
      <div class="container" id="graph_paper">
+		<div id="fib_page">
 
           <div class="row">   <!-- intro -->
                <h1>The Z-Transform</h1>
@@ -52,7 +53,7 @@
           <div class="row">   <!-- row -->
                <div id="ztranpairs" class="col-md-6">
                     <p>A short table of $Z$ Transform Pairs is shown below.</p>
-                    <table class="table table-bordered table-striped table-condensed" width="90%" border="1">
+                    <table class="table table-bordered table-striped table-condensed ztable" width="90%" border="1">
                          <tr>
                               <td class="LaTeX">$$x[n]$$</td>
                               <td class="LaTeX">$$X(z)$$</td>
@@ -91,7 +92,7 @@
 
                <div id="ztranprops" class="col-md-6">  <!-- ztranprops -->
                     <p>A short table of $Z$ Transform Properties is shown below.</p>
-                    <table class="table table-bordered table-striped table-condensed" width="90%" border="1">
+                    <table class="table table-bordered table-striped table-condensed ztable" width="90%" border="1">
                          <tr>
                               <td class="LaTeX">$$\text{Property}$$</td>
                               <td class="LaTeX">$$x[n]$$</td>
@@ -175,6 +176,7 @@
                     </p>
                </div>
           </div>
+		</div>
      </div> <!-- container -->
      <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
      <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
