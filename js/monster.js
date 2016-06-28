@@ -92,7 +92,7 @@ $(document).ready(function(){
      // });
      console.log('line1');
      console.log(monsters);
-     $('#grid').html(makeGrid(monsters, 2, 2));    /* create HTML grid on M rows and N columns.  the product of M and N must be an even number <= 32.  */
+     $('#grid').html(makeGrid(monsters, 2, 4));    /* create HTML grid on M rows and N columns.  the product of M and N must be an even number <= 32.  */
      console.log('grid was created');
      console.log('line2');
      console.log(monsters);
