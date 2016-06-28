@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro",Verdana, "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-vertical-center {
@@ -224,6 +224,9 @@ hr.small {
 .ztable {
 	background-color: #FFFFFF;
 }
+#batman_position {
+	margin-left: 10%;
+}
 @media(max-width:768px) {
     .map {
         height: 75%;
@@ -240,8 +243,9 @@ footer {
 #spiral {
      width: 100%;
      float: right;
-     padding-left: 5%;
-     padding-right: 5%;
+     /*padding-left: 5%;
+     padding-right: 5%;*/
+     border: 0.5em solid #336666;
 }
 #graph_paper {
 	background-image: url(../img/graph_paper.png);
@@ -266,4 +270,10 @@ footer {
 #fib_page {
 	margin-left: 5%;
 	margin-right: 5%;
+}
+.portfolio-item {
+	border: 1px solid black;
+}
+#fibonacci_banner {
+     background-color: white;
 }
