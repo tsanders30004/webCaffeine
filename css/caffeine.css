@@ -158,6 +158,7 @@ hr.small {
 
 .about {
     padding: 50px 0;
+    background-color: #dbd4ab;
 }
 
 /* Services */
@@ -276,4 +277,10 @@ footer {
 }
 #fibonacci_banner {
      background-color: white;
+}
+.bg-primary {
+     background-color: #c17c08;
+}
+.left_justify {
+     text-align: left;
 }
