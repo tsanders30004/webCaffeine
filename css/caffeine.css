@@ -277,3 +277,9 @@ footer {
 #fibonacci_banner {
      background-color: white;
 }
+.developer-text {
+     font-family: 'Inconsolata';
+     font-size: 1.5em;
+     color: #DBD4AB;
+     padding-left:  10%;
+}
