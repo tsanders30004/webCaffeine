@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import url("file:///Macintosh HD/Applications/XAMPP/xamppfiles/HTDOCS/webfonts/Droid_Sans_Bold/stylesheet.css");
+#headerLogo {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#all_content {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #DBD4AB;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	background-repeat: repeat;
+	background-image: url(file:///Macintosh%20HD/Applications/XAMPP/xamppfiles/HTDOCS/artwork/wallpapers/cigar-texture2.jpg);
+	font-family: electrolize;
+	font-style: normal;
+	font-weight: 400;
+}
+#all_content2 {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(201,201,201,1.00);
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	background: red; /* For browsers that do not support gradients */
+     background: -webkit-linear-gradient(left top, #7A2202, #D8AA61); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(bottom right, #7A2202, #D8AA61); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(bottom right, #7A2202, #D8AA61); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(to bottom right, #7A2202, #D8AA61);
+}
+footer {
+	font-size: 0.8em;
+	text-align: center;
+	/* [disabled]color: rgba(118,118,118,1.00); */
+}
+body {
+	font-family: electrolize;
+	font-style: normal;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: rgba(255,223,159,1.00);
+}
+.main_page_photos {
+	width: 100%;
+	border-radius: .5em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	border: 1em solid rgba(255,255,255,1.00);
+}
+.album_cover {
+	width: 96%;
+	border-radius: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	border: 1em solid rgba(255,255,255,0.75);
+	background-color: rgba(245,211,0,0.50);
+	-moz-box-shadow: 5px 7px 5px hsla(0, 0%, 0%, .3);
+	-webkit-box-shadow: 20px 20px 15px hsla(0, 0%, 0%, .3);
+	box-shadow: 5px 7px 5px hsla(0, 0%, 0%, .3);
+	-webkit-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+.album_cover:hover {
+	-moz-box-shadow: 5px 7px 5px hsla(0, 0%, 0%, .6);
+	-webkit-box-shadow: 20px 20px 15px hsla(0, 0%, 0%, .6);
+	box-shadow: 5px 7px 5px hsla(0, 0%, 0%, .6);
+	width: 100%;
+}
+.octane {
+	width: 100%;
+}
+#all_content .navbar.navbar-default {
+	border-radius: .7em;
+}body .navbar.navbar-default ul li a img {
+	max-width: 30px;
+}
+#logo {
+	height: 40px;
+	margin-top: -10px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: #AAAAAA;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	-webkit-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}.navbar-default .navbar-nav > li > a:hover {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+div.carousel-inner img {
+	border-radius: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	border: 3em solid rgba(255,255,255,1.00);
+	background-color: rgba(193, 124, 8, 1.00);
+	-moz-box-shadow: 	10px 10px 10px hsla(0, 0%, 0%, .3);
+	-webkit-box-shadow: 10px 10px 10px hsla(0, 0%, 0%, .3);
+	box-shadow: 		10px 10px 10px hsla(0, 0%, 0%, .3);
+}
+
+.carousel-control.left {
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0001) 100%);
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0001) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .0001)));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0001) 100%);
+  	filter: 			progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat: repeat-x;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .0001)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0001) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}
+h4 {
+	text-align: left;
+	font-family: electrolize;
+	font-style: normal;
+	font-weight: 400;
+	color: #D8AA61;
+}
+.album_link {
+	text-align: center;
+	margin-bottom: 2em;
+	margin-top: 1em;
+	-webkit-transition: all 250ms;
+	-o-transition: all 250ms;
+	transition: all 250ms;
+}
+.album_link p:hover {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.photo_margin {
+	margin-top: 2em;
+	margin-right: 2em;
+	margin-bottom: 2em;
+	margin-left: 2em;
+}
+.portfolio_photo {
+	width: 100%;
+	border-radius: 		1em;
+	padding-top: 		2em;
+	padding-right: 		2em;
+	padding-left: 		2em;
+	padding-bottom: 	2em;
+	border: 			1.5em solid rgba(255,255,255,0.75);
+	background-color: 	rgba(245,211,0,0.50);
+	-moz-box-shadow: 	5px 7px 5px hsla(0, 0%, 0%, .3);
+	-webkit-box-shadow: 20px 20px 15px hsla(0, 0%, 0%, .3);
+	box-shadow: 		5px 7px 5px hsla(0, 0%, 0%, .3);
+}
+.photographer_photo {
+	width: 100%;
+	border-radius: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	border: 1em solid rgba(255,255,255,0.75);
+	background-color: rgba(245,211,0,0.50);
+	-moz-box-shadow: 5px 7px 5px hsla(0, 0%, 0%, .3);
+	-webkit-box-shadow: 20px 20px 15px hsla(0, 0%, 0%, .3);
+	box-shadow: 5px 7px 5px hsla(0, 0%, 0%, .3);
+}
+.faq_question {
+	font-style: bold;
+	font-weight: 800;
+	float: none;
+	font-size: 1.25em;
+}
+.faq_answer {
+	text-align: justify;
+	margin-bottom: 1.75em;
+	margin-left: 3em;
+}
+label {
+	margin-bottom: 1em;
+}
+input[type="text"] {
+	width: 100%;
+}
+input[type="email"] {
+	width: 100%;
+}
+textarea {
+	width:  100%;
+}.album_description {
+	text-align: left;
+}
+.faq_q {
+	border-radius: 0.75em;
+	background-color: rgba(184,157,115,0.7);
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	margin-bottom: 0.75em;
+	font-weight: 800;
+	font-size: 1.2em;
+	-moz-box-shadow: 7px 7px 3px hsla(0, 0%, 0%, .4);
+	-webkit-box-shadow: 7px 7px 3px hsla(0, 0%, 0%, .4);
+	box-shadow: 7px 7px 3px hsla(0, 0%, 0%, .4);
+	text-align: center;
+}
+.faq_a {
+	border-radius: 0.75em;
+	background-color: rgba(221,189,139,0.7);
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	margin-bottom: 2em;
+	-moz-box-shadow: 7px 7px 3px hsla(0, 0%, 0%, .3);
+	-webkit-box-shadow: 7px 7px 3px hsla(0, 0%, 0%, .3);
+	box-shadow: 7px 7px 3px hsla(0, 0%, 0%, .3);
+	text-align: justify;
+}
+.arrow {
+	height: 100%;
+	width: 100%;
+}
+.submit_button {
+	color: #7A2202;
+	background-color: #D8AA61;
+	line-height: 1.5;
+  	border-radius: 5px;
+}
+.input_box {
+	color: #7A2202;
+}
+a:link {
+	color: #FFFFFF;
+}
+a:visited {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #FFFFFF;
+}
+a:active {
+	color: #FFFFFF;
+}

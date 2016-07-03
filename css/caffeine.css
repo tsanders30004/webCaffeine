@@ -227,6 +227,9 @@ hr.small {
 #batman_position {
 	margin-left: 10%;
 }
+.justify_center {
+	text-align: center;
+}
 @media(max-width:768px) {
     .map {
         height: 75%;
