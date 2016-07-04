@@ -236,12 +236,27 @@ hr.small {
     }
 }
 
+.experience_text {
+     padding-left: 5%;
+}
 /* Footer */
 
 footer {
     padding: 100px 0;
 }
 
+.bio_img {
+     width: 100%;
+}
+
+.bio_header {
+     font-size: 1.15em;
+     font-weight: bold;
+     padding-bottom: 1em;
+}
+.bio_list {
+     font-size: 1.15em;
+}
 /* Other */
 #spiral {
      width: 100%;
@@ -285,4 +300,28 @@ footer {
      font-size: 1.5em;
      color: #DBD4AB;
      padding-left:  10%;
+}
+
+.text-vertical-bottom {
+    display: table-cell;
+    text-align: left;
+    vertical-align: center;
+}
+/*div {
+     border: 1px dashed #CCCCCC;
+}*/
+.contact_row {
+     padding-bottom: 0.75em;
+}
+.developer_photo {
+     width: 100%;
+     border: 1em solid #C17C08;
+     border-radius: 10px;
+     padding: 1em;
+     background-color: #DBD4AB;
+}
+.contact_form_label {
+     font-size: 1em;
+     font-weight: bold;
+     padding: 0;
 }
