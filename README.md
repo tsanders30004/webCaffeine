@@ -5,7 +5,10 @@ Web-Caffeine is the web design / development portfolio of Tim Sanders.
 
 ## Version Number:  1.0.0
 
-##Technologies, Frameworks, and Programming Languages used
+##Contributors
+*    Tim Sanders
+
+##Technologies, Frameworks, and Programming Languages Used
 *    HTML5
 *    CSS3
 *    Bootstrap
@@ -15,33 +18,36 @@ Web-Caffeine is the web design / development portfolio of Tim Sanders.
 *    PHP
 *    MySQL
 
-##Overview of portfolio
+##Portfolio Overview
 ###Memory Game
-*    x
-*    x
-*    x
+*    The primary technology used in this gave was Functional Programming and jQuery.
+
 ###Batman
-*    x
-*    x
-*    x
+*    This was the first application written primarily with Object-Oriented-Programming.
+*    The HTML Canvas Tool was used extensively in this game.
+*    Event handlers for keyboard events were implemented using JavaScript.
+*    The object of the game to avoid collision with any of the moving enemies.  
+
 ###Photo Caffeine
-*    x
-*    x
-*    x
+*    This application was written using jQuery, PHP, and MySQL.
+*    Photograph data is stored in MySQL.
+*    Photo data is read from the database and used to display photos in random order and at a randomly-generated rotation angle.
+*    The functionality will be expanded later to support keyword search, albums, genres, user comments, and Flickr integration.
+
 ###Math Typesetting
-
-
-##Contributors
-*    Tim Sanders
-
-
-
-
-##Project Screenshots
+*    The application uses the LaTeX markup language in order to display typeset mathematical equations, of particular interest in the scientific community.
+*    A tie-in to the Fibonacci Sequence was included.
 
 ##Features To-Be-Included in Next Revision
+###BlackJack Game
+###Drawing Application
+###Weather Application
 
 ## Known Issues
+*Reset button in Memory Game does not yet work.
+*Contact for submission button is not yet implemented.
+*Position of graphics on main page does not scale well for mobile devices.
+*Batman game is not supported on mobile devices.  Need a media query to display an appropriate message for mobile users.
+*MySQL is not configured yet on webcaffeine.surge.sh
 
-
-##URL to live project
+##Project URL: (webcaffeine.surge.sh)
