@@ -44,10 +44,10 @@ Web-Caffeine is the web design / development portfolio of Tim Sanders.
 ###Weather Application
 
 ## Known Issues
-*Reset button in Memory Game does not yet work.
-*Contact for submission button is not yet implemented.
-*Position of graphics on main page does not scale well for mobile devices.
-*Batman game is not supported on mobile devices.  Need a media query to display an appropriate message for mobile users.
-*MySQL is not configured yet on webcaffeine.surge.sh
+*    Reset button in Memory Game does not yet work.
+*    Contact for submission button is not yet implemented.
+*    Position of graphics on main page does not scale well for mobile devices.
+*    Batman game is not supported on mobile devices.  Need a media query to display an appropriate message for mobile users.
+*    MySQL is not configured yet on webcaffeine.surge.sh
 
-##Project URL: (webcaffeine.surge.sh)
+##Project URL: (http://webcaffeine.surge.sh)
