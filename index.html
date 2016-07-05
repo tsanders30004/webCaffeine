@@ -34,13 +34,10 @@
 <body>
 
      <!-- Logo -->
-     <div id="logo">
-          <img src="img/artwork/logo.png" alt="logo" width="35%">
-     </div>
+     <!-- <div id="logo">
+          <img src="img/logo.png" alt="logo" width="35%">
+     </div> -->
 
-     <div id="developer_photo">
-
-     </div>
      <!-- Navigation -->
      <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
      <nav id="sidebar-wrapper">
@@ -69,14 +66,22 @@
 
      <!-- Header -->
      <header id="top" class="header">
-          <div class="text-vertical-center">
+
+          <!-- <div id="logo">
+               <img src="img/logo.png" alt="logo" width="30%">
+          </div> -->
+
+          <div style="position: absolute; top:5%; left: 5%; width: 25%;">
+               <img style="width: 100%;" src="img/logo.png" alt="logo" width="30%">
+          </div>
+
+          <div id = "developer_info" class="text-vertical-center">
                <p class="developer-text" style="text-align: left;">var developerName = 'Tim Sanders';</p>
                <p class="developer-text" style="text-align: left;">var location = 'Metro Atlanta';"</p>
                <p class="developer-text" style="text-align: left;">var email = 'tim.sanders@web-caffeine.com';</p>
                <p class="developer-text" style="text-align: left;">when(youNeedWebsite){</p>
-                    <p class="developer-text" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ContactTim(ASAP)</p>
-                    <p class="developer-text" style="text-align: left;">}</p>
-               </p>
+               <p class="developer-text" style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contactTim(ASAP)</p>
+               <p class="developer-text" style="text-align: left;">}</p>
                <br>
                <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
           </div>
@@ -94,15 +99,15 @@
 
                <div class="row">
                     <div class="col-sm-4">
-                         <img src="img/artwork/gt2.png">
+                         <img src="img/gt2.png">
                          <p class="bio_header"> Georgia Tech</p>
                     </div>
                     <div class="col-sm-4">
-                         <img src="img/artwork/ece4.png">
+                         <img src="img/ece4.png">
                          <p class="bio_header">Emory, Continuing Education</p>
                     </div>
                     <div class="col-sm-4">
-                         <img src="img/artwork/dc2.png">
+                         <img src="img/dc2.png">
                          <p class="bio_header"><span style="font-weight: normal;">digital</span>crafts</p>
                     </div>
                </div>
@@ -171,11 +176,11 @@
                     </div>
                     <div class="col-sm-4">
                          <div>
-                              <div class="contact_row"><img class="contact_icon" src="img/artwork/contact_icons/email.png"         alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;<a href="mailto:tim.sanders@web-caffeine.com?Subject=Web&nbsp;Caffeine&nbsp;Visitor" target="_top">tim.sanders@web-caffeine.com</a></div>
-                              <div class="contact_row"><img class="contact_icon" src="img/artwork/contact_icons/phone.png"         alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;+1 678-464-4937<br></div>
-                              <div class="contact_row"><img class="contact_icon" src="img/artwork/contact_icons/linkedin.png"      alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;<a href="http://www.linkedin.com/in/tsanders30004">Linked In</a></div>
-                              <div class="contact_row"><img class="contact_icon" src="img/artwork/contact_icons/github.png"        alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;<a href="http://www.github.com/tsanders30004">GitHub</a></div>
-                              <div class="contact_row"><img class="contact_icon" src="img/artwork/contact_icons/resume.png"        alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;<a href="img/resume.pdf" target="_blank">Résumé</a></div>
+                              <div class="contact_row"><img class="contact_icon" src="img/email.png"         alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;<a href="mailto:tim.sanders@web-caffeine.com?Subject=Web&nbsp;Caffeine&nbsp;Visitor" target="_top">tim.sanders@web-caffeine.com</a></div>
+                              <div class="contact_row"><img class="contact_icon" src="img/phone.png"         alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;+1 678-464-4937<br></div>
+                              <div class="contact_row"><img class="contact_icon" src="img/linkedin.png"      alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;<a href="http://www.linkedin.com/in/tsanders30004">Linked In</a></div>
+                              <div class="contact_row"><img class="contact_icon" src="img/github.png"        alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;<a href="http://www.github.com/tsanders30004">GitHub</a></div>
+                              <div class="contact_row"><img class="contact_icon" src="img/resume.png"        alt="email icon" width="35px" height = "35px" style="display: inline;">&nbsp; &nbsp;<a href="img/resume.pdf" target="_blank">Résumé</a></div>
                          </div>
                     </div>
                     <div class="col-sm-4">
@@ -332,7 +337,7 @@
                               <div class="col-md-6">
                                    <div class="portfolio-item" id="fibonacci_banner">
                                         <a href="math.html">
-                                             <img class="img-portfolio img-responsive" src="img/artwork/fibonacci.png">
+                                             <img class="img-portfolio img-responsive" src="img/fibonacci.png">
                                         </a>
                                    </div>
                               </div>
@@ -342,6 +347,7 @@
                                    <div class="portfolio-item" style="background-color: white;">
                                         <a href="http://weathercaffeine.surge.sh">
                                              <img class="img-portfolio img-responsive" src="img/weather.jpg" height="200px" width="300px">
+                                             xxx
                                         </a>
                                    </div>
                               </div>
@@ -405,18 +411,18 @@
                               <ul class="list-inline">
                                    <li>
                                         <a href="http://www.linkedin.com/in/tsanders30004" target="_blank">
-                                             <img class="contact_icon" src="img/artwork/contact_icons/linkedin.png" width="35px" height = "35px" style="display: inline;">
+                                             <img class="contact_icon" src="img/linkedin.png" width="35px" height = "35px" style="display: inline;">
                                         </a>
                                    </li>
 
                                    <li>
                                         <a href="http://www.github.com/tsanders30004" target="_blank">
-                                             <img class="contact_icon" src="img/artwork/contact_icons/github.png"   width="35px" height = "35px" style="display: inline;">
+                                             <img class="contact_icon" src="img/github.png"   width="35px" height = "35px" style="display: inline;">
                                         </a>
                                    </li>
                                    <li>
                                         <a href="mailto:tim.sanders@web-caffeine.com?Subject=Web&nbsp;Caffeine&nbsp;Visitor" target="_blank">
-                                             <img class="contact_icon" src="img/artwork/contact_icons/email.png" width="35px" height = "35px" style="display: inline;">
+                                             <img class="contact_icon" src="img/email.png" width="35px" height = "35px" style="display: inline;">
                                         </a>
                                    </li>
                               </ul>
