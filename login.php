@@ -1,6 +1,6 @@
 <?php // login.php
 	$hostname = 'localhost';
-	$username	= 'root';
+	$username	= 'webcaffe_tim';
 	$password	= 'Langlitz2015!';
-	$database = 'caffeine';
+	$database = 'webcaffe_caffeine';
 ?>
