@@ -43,15 +43,14 @@ Web-Caffeine is the web design / development portfolio of Tim Sanders.
 ###Weather Application
 *    Displays weather map and data for several major US cities.
 
-##Features To-Be-Included in Next Revision
 ###BlackJack Game
+*    A Human vs. Computer BlackJack game.
+
 ###Drawing Application
-###Weather Application
+*    Allows multiple users to draw on the same 'canvas' using socket.io
 
-## Known Issues
-*    Reset button in Memory Game does not yet work.
-*    Contact for submission button is not yet implemented.
-*    Position of graphics on main page does not scale well for mobile devices.
-*    Batman game is not supported on mobile devices.  Need a media query to display an appropriate message for mobile users.
+##Features To-Be-Included in Next Revision
 
-##Project URL: (http://webcaffeine.surge.sh)
+###Coffee E-Commerce Application
+
+##Project URL: (http://www.web-caffeine.com)
