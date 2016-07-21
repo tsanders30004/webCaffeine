@@ -312,6 +312,7 @@ footer {
 }*/
 .contact_row {
      padding-bottom: 0.75em;
+     padding-left: 4em;
 }
 .developer_photo {
      width: 100%;
@@ -324,4 +325,24 @@ footer {
      font-size: 1em;
      font-weight: bold;
      padding: 0;
+}
+.divider_green {
+     border-top: 2px dashed #b6AC5C;
+}
+.divider_rust {
+     border-top: 2px dashed #c17c08;
+}
+#footer_logo {
+     width: 150px;
+     height: 21px;
+}
+footer {
+     background-image: url('../img/logos/logo_footer.png');
+}
+.modal-body {
+     text-align: left;
+}
+.btn-modal {
+     margin-top: -1.25em;
+     margin-bottom: 1.75em;
 }
